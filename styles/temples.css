@@ -1,5 +1,10 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* variable test*/
+:root {
+    --main-color: #003882;
+    --header-padding: 20px;
+  }  
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,10 +16,10 @@ body {
 }
 
 header {
-    background-color: #4b0082; /* Purple theme */
+    background-color: var(--main-color);
     color: #fff;
     text-align: left;
-    padding: 50px;
+    padding: var(--header-padding);
 }
 
 header h1 {
@@ -22,7 +27,6 @@ header h1 {
     font-size: 40px;
 }
 
-/* Center the hamburger icon */
 #hamburger {
     display: block;
     font-size: 40px;
@@ -30,22 +34,21 @@ header h1 {
     border: none;
     color: #fff;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: var(--header-padding);
+    right: var(--header-padding);
     cursor: pointer;
     z-index: 10;
 }
 
-/* Mobile nav styles */
 nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #4b0082;
+    background-color: var(--main-color);
     padding: 1rem 0;
     gap: 1rem;
     position: absolute;
-    top: 60px;
+    top: var(--header-padding);
     width: 100%;
     left: 0;
     z-index: 9;
@@ -53,7 +56,7 @@ nav {
   
 nav a {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 25px;
     text-decoration: none;
 }
   
@@ -67,51 +70,42 @@ nav.show {
   
 main {
     max-width: 1200px;
-    margin: 0 auto; /* Center the main content horizontally */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content inside the main */
-    gap: 2rem; /* Space between the heading and gallery */
+    align-items: center;
+    gap: 2rem;
     text-align: center;
 }
 
 main h2 {
-    margin: 0;
+    margin: 2rem;
     font-size: 2rem;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Default: one column on small screens */
-    gap: 1.5rem; /* Space between gallery items */
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Limit the gallery width for better centering */
-    justify-items: center; /* Center items within the gallery grid */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
 }
 
-figure {
-    margin: 0 auto; /* Center each figure */
-    text-align: center;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    max-width: 300px; /* Uniform size for each figure */
-}
-
-figure img {
+img {
     width: 100%;
     border-radius: 5px;
+    max-height: 200px;
 }
 
 figcaption {
     margin-top: 0.5rem;
     font-style: italic;
-    color: #555;
+    color: var(--main-color);
 }
 
 footer {
-    background-color: #4b0082;
+    background-color: var(--main-color);
     color: #fff;
     text-align: center;
     padding: 1rem 0;

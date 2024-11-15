@@ -1,35 +1,25 @@
-/* Media query for larger screens */
 @media (min-width: 768px) {
   #hamburger {
-    display: none; /* Hide hamburger menu in larger view */
+    display: none;
   }
 
   nav {
     display: flex;
-    flex-direction: row; /* Arrange nav items horizontally */
+    flex-direction: row;
     justify-content: right;
     gap: 2rem;
     background-color: transparent;
     position: absolute;
-    transform: translatex(-30px);
+    transform: translatex(-2rem);
 }
 
   main {
-      /* Keep the main structure the same for larger screens */
       display: block;
   }
 
   .gallery {
-      grid-template-columns: repeat(3, 1fr); /* Two columns for larger screens */
-      gap: 2rem; /* Adjust spacing for a more balanced layout */
-      justify-items: center; /* Center items in the grid */
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-
-  #nav-menu {
-
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      justify-items: center;
   }
 }
