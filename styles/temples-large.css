@@ -1,39 +1,35 @@
+/* Media query for larger screens */
 @media (min-width: 768px) {
-    #hamburger {
-      display: none; /* Hide hamburger menu in larger view */
-    }
-  
-    nav {
-      display: flex; /* Show nav menu */
-      flex-direction: row;
-      justify-content: flex-start;
-      gap: 2rem;
-      padding-left: 2rem;
-      background-color: transparent;
-    }
-  
-    nav a {
-      font-size: 1rem;
-    }
+  #hamburger {
+    display: none; /* Hide hamburger menu in larger view */
   }
-  
 
-    main {
-        max-width: 1200px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-    }
+  nav {
+    display: flex;
+    flex-direction: row; /* Arrange nav items horizontally */
+    justify-content: right;
+    gap: 2rem;
+    background-color: transparent;
+    position: absolute;
+    transform: translatex(-30px);
+}
 
-    figure {
-        margin: 0;
-    }
+  main {
+      /* Keep the main structure the same for larger screens */
+      display: block;
+  }
 
-    header h1 {
-        font-size: 2.4rem;
-    }
+  .gallery {
+      grid-template-columns: repeat(3, 1fr); /* Two columns for larger screens */
+      gap: 2rem; /* Adjust spacing for a more balanced layout */
+      justify-items: center; /* Center items in the grid */
+  }
 
-    main h2 {
-        text-align: left;
-        font-size: 2rem;
-    }
+  nav a {
+    font-size: 1rem;
+  }
+
+  #nav-menu {
+
+  }
+}

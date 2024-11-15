@@ -13,32 +13,32 @@ body {
 header {
     background-color: #4b0082; /* Purple theme */
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+    text-align: left;
+    padding: 50px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 40px;
 }
 
 /* Center the hamburger icon */
 #hamburger {
     display: block;
-    font-size: 1.8rem;
+    font-size: 40px;
     background: none;
     border: none;
     color: #fff;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 50px;
+    right: 50px;
     cursor: pointer;
     z-index: 10;
 }
 
 /* Mobile nav styles */
 nav {
-    display: none; /* Hide menu initially for mobile view */
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #4b0082;
@@ -66,25 +66,37 @@ nav.show {
 }
   
 main {
-    max-width: 90%;
-    margin: 2rem auto;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the main content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the main */
+    gap: 2rem; /* Space between the heading and gallery */
     text-align: center;
 }
 
 main h2 {
-    margin-bottom: 2rem;
-    color: #4b0082;
-    font-size: 1.6rem;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: one column on small screens */
+    gap: 1.5rem; /* Space between gallery items */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit the gallery width for better centering */
+    justify-items: center; /* Center items within the gallery grid */
 }
 
 figure {
-    margin: 1rem auto;
+    margin: 0 auto; /* Center each figure */
     text-align: center;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
-    max-width: 300px;
+    max-width: 300px; /* Uniform size for each figure */
 }
 
 figure img {
