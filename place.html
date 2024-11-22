@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Place Page</title>
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="scripts/place.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mexico Info Page</title>
+        <meta name="description" content="Mexico has a lot of information to be known and it's very interesting.">
+        <meta name="author" content="Ethen Campbell">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+      </head>
 <body>
   <header>
     <h1>Mexico</h1>
@@ -14,7 +19,10 @@
 
   <main>
     <section class="hero">
-      <img src="images/title-large.webp" alt="Mexico Photo">
+        <picture>
+            <source srcset="images/title-large.webp" media="(min-width: 768px)">
+            <source srcset="images/title-small.webp" media="(min-width: 480px)">
+        </picture>
     </section>
 
     <section class="data">
@@ -32,6 +40,7 @@
 
     <section class="weather">
       <h2>Weather</h2>
+      <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
       <ul>
         <li><strong>Temperature:</strong> 41°F</li>
         <li><strong>Conditions:</strong> Partly Cloudy</li>
