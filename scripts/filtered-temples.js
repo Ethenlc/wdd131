@@ -12,9 +12,7 @@ const footer = document.querySelector("footer");
 const year = new Date().getFullYear();
 const lastModified = document.lastModified;
 
-footer.innerHTML = `
-  &copy; ${year} Ethen Campbell, Idaho • Last Modified: ${lastModified}
-`;
+footer.innerHTML = `&copy; ${year} Ethen Campbell, Idaho • Last Modified: ${lastModified}`;
 
 const temples = [
   {
