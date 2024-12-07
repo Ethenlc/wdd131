@@ -57,3 +57,10 @@ if (window.location.pathname.includes("review.html")) {
     // Display the review count in the console (or update the UI if needed)
     console.log(`Reviews completed: ${reviewCount}`);
 }
+
+// Footer copyright year and last modified date
+const footer = document.querySelector("footer");
+const year = new Date().getFullYear();
+const lastModified = document.lastModified;
+
+footer.innerHTML = `&copy; ${year} Ethen Campbell, Idaho • Last Modified: ${lastModified}`;

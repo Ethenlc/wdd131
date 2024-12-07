@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/form.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Submit your review for our products. Share your thoughts on features and more.">
+        <meta name="author" content="Ethen Campbell">
+        <title>Product Review Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
 <body>
+    <h1>Product Review</h1>
     <form method="get" action="review.html">
         <!-- Product Name -->
         <label for="productName">Product Name:</label>
@@ -34,24 +40,28 @@
             <legend>Useful Features:</legend>
             <div class="checkbox-container">
                 <input type="checkbox" id="feature" name="features" value="Feature 1">
-                <label for="feature1">Feature 1</label>
+                <label for="feature1">Durability</label>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="feature" name="features" value="Feature 2">
-                <label for="feature2">Feature 2</label>
+                <label for="feature2">Ease of Use</label>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="feature" name="features" value="Feature 3">
-                <label for="feature3">Feature 3</label>
+                <label for="feature3">Performance</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="feature" name="features" value="Feature 4">
+                <label for="feature4">Design</label>
             </div>
         </fieldset>
     
         <!-- Written Review -->
-        <label for="review">Written Review:</label>
+        <label for="review">Written Review (optional)</label>
         <textarea id="review" name="review"></textarea>
     
         <!-- User Name -->
-        <label for="userName">User Name:</label>
+        <label for="userName">User Name (optional)</label>
         <input type="text" id="userName" name="userName">
     
         <!-- Submit Button -->
@@ -59,9 +69,10 @@
     </form>
     
     <footer>
-        <!-- Common footer content -->
+        <p>&copy; <span id="currentyear"></span> Ethen Campbell, Idaho</p>
+        <p id="lastModified"></p>
     </footer>
     
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
