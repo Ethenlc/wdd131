@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <form method="get" action="review.html">
+        <!-- Product Name -->
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <!-- Options will be populated by JavaScript -->
+        </select>
+    
+        <!-- Overall Rating -->
+        <legend>Overall Rating:</legend>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+                    
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+    
+        <!-- Useful Features -->
+        <fieldset class="vertical">
+            <legend>Useful Features:</legend>
+            <div class="checkbox-container">
+                <input type="checkbox" id="feature" name="features" value="Feature 1">
+                <label for="feature1">Feature 1</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="feature" name="features" value="Feature 2">
+                <label for="feature2">Feature 2</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="feature" name="features" value="Feature 3">
+                <label for="feature3">Feature 3</label>
+            </div>
+        </fieldset>
+    
+        <!-- Written Review -->
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review"></textarea>
+    
+        <!-- User Name -->
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName">
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+    
+    <footer>
+        <!-- Common footer content -->
+    </footer>
+    
+    <script src="scripts/form.js"></script>
+</body>
+</html>
