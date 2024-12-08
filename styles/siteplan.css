@@ -1,0 +1,20 @@
+body {
+    background-color: #F5F5F5; /* White Smoke */
+    color: #545454; /* Dark Brown for text */
+    font-family: Arial, sans-serif; /* Default body font */
+}
+h1, h2 {
+    color: #545454; /* Dark Brown for Headings */
+}
+a {
+    color: #545454; /* Dark Brown for Links */
+    text-decoration: none;
+}
+a:hover {
+    color: #ab987e; /* Tan on hover for links */
+}
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ab987e; /* Tan for Borders */
+}
